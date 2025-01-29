@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Darshana Paithankar - Product Marketing Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@300;500&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #4a4a4a;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .banner {
+            background: linear-gradient(to right, #e0e0e0, #f2f2f2);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000000;
+            font-family: 'Lora', serif;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #000000;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+        .section {
+            background: #f8f8f8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 180px;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 8px 0;
+        }
+        a {
+            color: #333333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .thumbnail {
+            width: 140px;
+            height: 140px;
+            border-radius: 10px;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #4a4a4a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="profile-photo.jpg" class="profile-img" alt="Your Photo">
+            <h1>Darshana Paithankar</h1>
+            <h2>Product Marketing Leader | GTM Strategist | DevOps, Security & AI</h2>
+            <p>
+                <a href="#">LinkedIn</a> 
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a results-driven product marketing leader with extensive experience in DevOps, security, and AI. Passionate about crafting impactful GTM strategies and delivering compelling product narratives.</p>
+        </div>
+        
+        <div class="section">
+            <h2>My Portfolio</h2>
+            
+            <h3>Webinars & Podcasts</h3>
+            <div class="grid-container">
+                <div class="grid-item"><img src="thumbnail-webinar1.jpg" class="thumbnail"><a href="#">DevOps and Hashicorp Terraform Provider</a></div>
+                <div class="grid-item"><img src="thumbnail-webinar2.jpg" class="thumbnail"><a href="#">GenAI for DevOps – Artificially Intelligent Enterprise</a></div>
+                <div class="grid-item"><img src="thumbnail-webinar4.jpg" class="thumbnail"><a href="#">Cisco DNA Software</a></div>
+            </div>
+            
+            <h3>Blogs</h3>
+            <ul>
+                <li><a href="#">MongoDB EA & AWS Azure Arc blog</a></li>
+                <li><a href="#">AWS CloudFormation blog</a></li>
+                <li><a href="#">IAC Terraform blog</a></li>
+                <li><a href="#">DevOps integration blog</a></li>
+                <li><a href="#">Performance Advisor blog</a></li>
+                <li><a href="#">Database security blog</a></li>
+                <li><a href="#">Online Archive blog</a></li>
+                <li><a href="#">What’s new in RedHat ACM 2.4 blog</a></li>
+                <li><a href="#">Cisco DNA Software blog</a></li>
+            </ul>
+            
+            <h3>Infographics & Checklists</h3>
+            <div class="grid-container">
+                <div class="grid-item"><img src="thumbnail-infographic1.jpg" class="thumbnail"><a href="#">ACM Introduction Checklist</a></div>
+                <div class="grid-item"><img src="thumbnail-infographic2.jpg" class="thumbnail"><a href="#">ACM Ansible Integration</a></div>
+            </div>
+            
+            <h3>Ebooks & Whitepapers</h3>
+            <div class="grid-container">
+                <div class="grid-item"><img src="thumbnail-ebook1.jpg" class="thumbnail"><a href="#">Managing Kubernetes Clusters for Dummies</a></div>
+                <div class="grid-item"><img src="thumbnail-ebook2.jpg" class="thumbnail"><a href="#">Data Resilience Strategy with MongoDB Atlas</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
