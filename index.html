@@ -38,47 +38,56 @@
         }
         h2 {
             color: #000000;
-            border-bottom: 3px solid #222;
             padding-bottom: 12px;
             font-weight: 700;
             font-size: 30px;
             margin-top: 40px;
         }
         .section {
-            background: #f8f8f8;
-            padding: 40px;
-            margin: 40px 0;
+            background: #f9f9f9;
+            padding: 50px;
             border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid #ddd;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            background: linear-gradient(to right, #ddd, #fff);
+            border-radius: 8px;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 30px;
         }
         .grid-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             margin-top: 20px;
         }
         .grid-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 180px;
+            width: 220px;
             padding: 15px;
             background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
         }
         .grid-item:hover {
             transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .thumbnail {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         ul li {
-            margin: 8px 0;
+            margin: 5px 0;
         }
         a {
             color: #333333;
@@ -87,19 +96,7 @@
         }
         a:hover {
             text-decoration: underline;
-        }
-        .thumbnail {
-            width: 140px;
-            height: auto;
-            border-radius: 10px;
-            object-fit: contain;
-        }
-        .profile-img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            border: 4px solid #4a4a4a;
+            color: #222222;
         }
     </style>
 </head>
@@ -107,9 +104,7 @@
     <div class="container">
         <div class="banner">
             <h1>Darshana Paithankar</h1>
-            <p>
-                <a href="#">LinkedIn</a> 
-            </p>
+            <p><a href="#">LinkedIn</a></p>
         </div>
         
         <div class="section">
@@ -124,7 +119,7 @@
             <div class="grid-container">
                 <div class="grid-item"><img src="thumbnail-webinar1.jpg" class="thumbnail"><a href="#">DevOps and Hashicorp Terraform Provider</a></div>
                 <div class="grid-item"><img src="thumbnail-webinar2.jpg" class="thumbnail"><a href="#">GenAI for DevOps – Artificially Intelligent Enterprise</a></div>
-                <div class="grid-item"><img src="thumbnail-webinar4.jpg" class="thumbnail"><a href="#">Cisco DNA Software</a></div>
+                <div class="grid-item"><img src="thumbnail-webinar3.jpg" class="thumbnail"><a href="#">Cisco DNA Software</a></div>
             </div>
             
             <h3>Events</h3>
@@ -136,7 +131,7 @@
             </div>
             
             <h3>Blogs</h3>
-            <ul>
+            <ul style="list-style-type: none; padding: 0;">
                 <li><a href="#">MongoDB EA & AWS Azure Arc blog</a></li>
                 <li><a href="#">AWS CloudFormation blog</a></li>
                 <li><a href="#">IAC Terraform blog</a></li>
@@ -150,10 +145,10 @@
             
             <h3>Infographics & Checklists</h3>
             <div class="grid-container">
-                <div class="grid-item"><img src="thumbnail-infographic3.jpg" class="thumbnail"><a href="#">Security Best Practices</a></div>
-                <div class="grid-item"><img src="thumbnail-infographic4.jpg" class="thumbnail"><a href="#">Cloud Cost Optimization Guide</a></div>
                 <div class="grid-item"><img src="thumbnail-infographic1.jpg" class="thumbnail"><a href="#">ACM Introduction Checklist</a></div>
                 <div class="grid-item"><img src="thumbnail-infographic2.jpg" class="thumbnail"><a href="#">ACM Ansible Integration</a></div>
+                <div class="grid-item"><img src="thumbnail-infographic3.jpg" class="thumbnail"><a href="#">Security Best Practices</a></div>
+                <div class="grid-item"><img src="thumbnail-infographic4.jpg" class="thumbnail"><a href="#">Cloud Cost Optimization Guide</a></div>
             </div>
             
             <h3>Ebooks & Whitepapers</h3>
@@ -165,4 +160,3 @@
     </div>
 </body>
 </html>
-
