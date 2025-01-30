@@ -41,14 +41,16 @@
             border-bottom: 3px solid #222;
             padding-bottom: 12px;
             font-weight: 700;
-            font-size: 28px;
+            font-size: 30px;
+            margin-top: 40px;
         }
         .section {
             background: #f8f8f8;
-            padding: 30px;
-            margin: 30px 0;
+            padding: 40px;
+            margin: 40px 0;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ddd;
         }
         .grid-container {
             display: flex;
@@ -88,8 +90,9 @@
         }
         .thumbnail {
             width: 140px;
-            height: 140px;
+            height: auto;
             border-radius: 10px;
+            object-fit: contain;
         }
         .profile-img {
             width: 160px;
@@ -103,7 +106,6 @@
 <body>
     <div class="container">
         <div class="banner">
-            <img src="profile-photo.jpg" class="profile-img" alt="Your Photo">
             <h1>Darshana Paithankar</h1>
             <h2>Product Marketing Leader | GTM Strategist | DevOps, Security & AI</h2>
             <p>
@@ -164,3 +166,4 @@
     </div>
 </body>
 </html>
+
